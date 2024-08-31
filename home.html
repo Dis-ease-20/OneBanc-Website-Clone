@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Welcome to Dev Portal - OneBanc</title>
+    <link rel=stylesheet href="style.css" />
+    <link rel="icon" href="images\favicon.ico">
+
+</head>
+<body class="home">
+    <!-- Title-container -->
+    <div class="title-container">
+        <!-- header starts-->
+        <div class="header">
+            <a href="" class="logo"><img src="images\onebanc_dev_logo_white.png" alt="oneBanc-logo" /></a>
+            <div class="header-items">
+                <div class="header-item-list">
+                    <a class="link hide" href="/">BRD</a>
+                    <a class="link" href="/">API's</a>
+                </div>
+                <a href="/" class="primary-button">Log In</a>
+                <div class="login-state hide">
+                    <div class="user-profile"></div>
+                    <div class="user-greeting">
+                        <div class="user-name"></div>
+                        <a href="/" class="primary-button">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header ends -->
+        <!-- welcome-section start -->
+        <div class="welcome-section">
+            <img class="background-image" src="images/dev_landing_landscape.png" alt="welcome background image" />
+            <div class="blur-overlay"></div>
+
+            <div class="title-box">
+                <div class="title-container body-box">
+                    <div class="page-title white-text">Welcome to</div>
+                    <div class="page-title highlight-text light">Dev<span class="txt">eloper</span> <span>Portal</span></div>
+                </div>
+                <div class="title-descriptor white-text">Your one stop gateway to a world of financial innovation. Explore powerful APIs and tools designed to streamline and enhance your development journey in the dynamic realm of banking technology.</div>
+            </div>
+        </div>
+        <!-- welcome-section start -->
+    </div>
+
+    <!-- content starts -->
+    <div class="content">
+        <div class="content-section">
+
+            <div class="diverse-section">
+                <div class="content-title">Diversified Sector in API Ecosystem</div>
+                <div class="descriptor body-box">
+                    Step into a realm of unparalleled innovation with our Banking Developer Portal, where the backbone of our technological prowess lies in a robust API ecosystem
+                    featuring a myriad of diverse modules. From seamless payment processing to robust authentication mechanisms, our ecosystem is a comprehensive toolkit that empowers developers to craft tailored solutions
+                    for the ever-evolving landscape of financial technology.Explore the possibilities and intricacies of our API ecosystem, a testament to our commitment to providing a cutting-edge platform for fostering creativity and excellence in banking development.
+                </div>
+            </div>
+
+            <div class="diverse-profile">
+
+                <div id="diverse-left-section" class="diverse-left-section">
+                    <div id="left-bankingservices" class="left-section-box active" onclick="toggleActive(this)">
+
+                        <table class="title-box">
+                            <tbody>
+                                <tr>
+                                    <td class="image"><img src="images\dev_bank_instituions.svg" /></td>
+                                    <td class="section-title dark-text bold-text">Banking Services </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="body-box">Empower developers to seamlessly integrate and leverage a spectrum of banking services, from real-time transactions and account management services to cutting-edge security features. </div>
+                        <a class="link log-out">Unlock Now</a>
+                        <a class="link log-in hide">View More</a>
+                    </div>
+                    <div id="left-corporateservices" class="left-section-box" onclick="toggleActive(this)">
+                        <table class="title-box">
+                            <tbody>
+                                <tr>
+                                    <td class="image"><img src="images\dev_corporate_partners.svg" /></td>
+                                    <td class="section-title dark-text bold-text">Corporate Partners </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="body-box">Designed to streamline and elevate human resource and payroll processes and offer a seamless integration platform for businesses seeking to enhance operational efficiency and employee experience. </div>
+                        <a class="link log-out">Unlock Now</a>
+                        <a class="link log-in hide">View More</a>
+                    </div>
+                    <div id="left-hrmsservices" class="left-section-box" onclick="toggleActive(this)">
+                        <table class="title-box">
+                            <tbody>
+                                <tr>
+                                    <td class="image"><img src="images\dev_payroll_management.svg" /></td>
+                                    <td class="section-title dark-text bold-text">HRMS Services</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="body-box">Empower developers to seamlessly integrate and leverage a spectrum of banking services, from real-time transactions and account management services to cutting-edge security features. </div>
+                        <a class="link log-out">Unlock Now</a>
+                        <a class="link log-in hide">View More</a>
+                    </div>
+                    <div id="left-merchantservices" class="left-section-box" onclick="toggleActive(this)">
+                        <table class="title-box">
+                            <tbody>
+                                <tr>
+                                    <td class="image"><img src="images\dev_merchant_partners.svg" /></td>
+                                    <td class="section-title dark-text bold-text">Merchant Partners</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="body-box">Empower developers to seamlessly integrate and leverage a spectrum of banking services, from real-time transactions and account management services to cutting-edge security features. </div>
+                        <a class="link log-out">Unlock Now</a>
+                        <a class="link log-in hide">View More</a>
+                    </div>
+                </div>
+
+                <div class="diverse-right-section">
+
+                    <div id="bankingservices" class="profile">
+                        <div class="section-title">Banking Services</div>
+                        <ul class="api-list-container">
+                            <li>
+                                <div class="api-list-title dull-white-text">Module</div>
+                                <ul class="api-list profile-level-2-list">
+                                    <li class="list-items">BBPS</li>
+                                    <li class="list-items">Card</li>
+                                    <li class="list-items">Reimbursement</li>
+                                    <li class="list-items">Salary Account</li>
+                                    <li class="list-items">Transaction</li>
+                                    <li class="list-items">UPI</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="api-list-container">
+                            <li>
+                                <div class="api-list-title dull-white-text">Control</div>
+                                <ul class="api-list">
+                                    <li class="list-items">Activate Card</li>
+                                    <li class="list-items">Check Card Status</li>
+                                    <li class="list-items">Delete Card Token</li>
+                                    <li class="list-items">Fetch all Tokenized Cards</li>
+                                    <li class="list-items">Fetch Card Control Details</li>
+                                    <li class="list-items">Get Tokenized Card Details</li>
+                                    <li class="list-items">Hotlist Card</li>
+                                    <li class="list-items">Issue Add on Card</li>
+                                    <li class="list-items">Manage Card Lock</li>
+                                    <li class="list-items">Pause Card Token</li>
+                                    <li class="list-items">Reissue Card</li>
+                                    <li class="list-items">Set Card PIN</li>
+                                    <li class="list-items">Update Card Control Details</li>
+                                    <li class="list-items">40+ more</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="corporateservices" class="profile hide">
+                        <div class="section-title">Corporate Services</div>
+                        <ul class="api-list-container">
+                            <li>
+                                <div class="api-list-title dull-white-text">Module</div>
+                                <ul class="api-list">
+                                    <li class="list-items">Activate Card</li>
+                                    <li class="list-items">Check Card Status</li>
+                                    <li class="list-items">Delete Card Token</li>
+                                    <li class="list-items">Fetch all Tokenized Cards</li>
+                                    <li class="list-items">Fetch Card Control Details</li>
+                                    <li class="list-items">Get Tokenized Card Details</li>
+                                    <li class="list-items">Hotlist Card</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="api-list-container">
+                            <li>
+                                <div class="api-list-title dull-white-text">Control</div>
+                                <ul class="api-list">
+                                    <li class="list-items">Account Balance</li>
+                                    <li class="list-items">Check Account Status</li>
+                                    <li class="list-items">Set Account Status</li>
+                                    <li class="list-items">Virtual Account Deactivation</li>
+                                    <li class="list-items">Create Virtual Account</li>
+                                    <li class="list-items">Check Transaction Status</li>
+                                    <li class="list-items">Fund Transfer Reversal</li>
+                                    <li class="list-items">Fund Transfer</li>
+                                    <li class="list-items">Return to Source</li>
+                                    <li class="list-items">Transaction History</li>
+                                    <li class="list-items">Add Nominee</li>
+                                    <li class="list-items">AMB Details</li>
+                                    <li class="list-items">40+ more</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="hrmsservices" class="profile hide">
+                        <div class="section-title">HRMS Services</div>
+                        <ul class="api-list-container">
+                            <li>
+                                <div class="api-list-title dull-white-text">Module</div>
+                                <ul class="api-list">
+                                    <li class="list-items">HRIS</li>
+                                    <li class="list-items">Payroll</li>
+                                    <li class="list-items">Travel and Entertainment</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="api-list-container">
+                            <li>
+                                <div class="api-list-title dull-white-text">Control</div>
+                                <ul class="api-list">
+                                    <li class="list-items">Get CTC Details</li>
+                                    <li class="list-items">Get Employee Details</li>
+                                    <li class="list-items">Get Employment Status</li>
+                                    <li class="list-items">Get New Joinees</li>
+                                    <li class="list-items">Get Holiday List</li>
+                                    <li class="list-items">Get Leave Data</li>
+                                    <li class="list-items">Update Salary Account Details</li>
+                                    <li class="list-items">Get Availed CTC Reimbursement</li>
+                                    <li class="list-items">Get Consumed CTC Reimbursement</li>
+                                    <li class="list-items">Get CTC Reimbursement Eligibility</li>
+                                    <li class="list-items">Update Availed CTC Reimbursement</li>
+                                    <li class="list-items">Update Consumed CTC Reimbursement</li>
+                                    <li class="list-items">Get IT Declaration</li>
+                                    <li class="list-items">Get IT Investment Submission Data</li>
+                                    <li class="list-items">Get IT Investment Submission Status</li>
+                                    <li class="list-items">Submit IT Investment and Allowance Proof</li>
+                                    <li class="list-items">40+ more</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="merchantservices" class="profile hide">
+                        <div class="section-title">Merchant Services</div>
+                        <ul class="api-list-container">
+                            <li>
+                                <div class="api-list-title dull-white-text">Module</div>
+                                <ul class="api-list">
+                                    <li class="list-items">Issue Add on Card</li>
+                                    <li class="list-items">Manage Card Lock</li>
+                                    <li class="list-items">Pause Card Token</li>
+                                    <li class="list-items">Reissue Card</li>
+                                    <li class="list-items">Set Card PIN</li>
+                                    <li class="list-items">Update Card Control Details</li>
+                                    <li class="list-items">View Card Details</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="api-list-container">
+                            <li>
+                                <div class="api-list-title dull-white-text">Control</div>
+                                <ul class="api-list">
+                                    <li class="list-items">Account Balance</li>
+                                    <li class="list-items">Check Account Status</li>
+                                    <li class="list-items">Set Account Status</li>
+                                    <li class="list-items">Virtual Account Deactivation</li>
+                                    <li class="list-items">Create Virtual Account</li>
+                                    <li class="list-items">Check Transaction Status</li>
+                                    <li class="list-items">Fund Transfer Reversal</li>
+                                    <li class="list-items">Fund Transfer</li>
+                                    <li class="list-items">Return to Source</li>
+                                    <li class="list-items">Transaction History</li>
+                                    <li class="list-items">Add Nominee</li>
+                                    <li class="list-items">AMB Details</li>
+                                    <li class="list-items">40+ more</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Banner Starts-->
+        <div class="banner">
+
+            <div class="banner-content">
+
+                <div class="content-title">We've got you covered with</div>
+                <div class="covered-module">
+
+                    <div class="left-box">
+                        <div class="title-box">
+                            <div class="image"><img src="images\dev_efficient.svg" alt="img" /></div>
+                            <div class="section-title dark-text bold-text">Efficient and Robust<span class="highlight-text"> APIs</span></div>
+                        </div>
+                        <div class="descriptor">Dive into a world where efficiency meets innovation, as our APIs redefine the standards for speed, reliability, and responsiveness, providing a foundation for agile and high-performance applications. </div>
+                    </div>
+
+                    <div class="right-box">
+                        <div class="title-box">
+                            <div class="image"><img src="images\dev_safe.svg" alt="img" /></div>
+                            <div class="section-title dark-text bold-text">Safe and Secure <span class="highlight-text"> APIs</span></div>
+                        </div>
+                        <div class="descriptor">Our cutting-edge APIs are meticulously crafted to deliver unparalleled performance and redefine the standards for speed, reliability, and responsiveness by ensuring swift and seamless interactions for developers and businesses. </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Request Access Section starts-->
+            <div class="request-access-section">
+                <div class="section-title bold-text dark-text">Want Access Explore? </div>
+                <div class="descriptor body-box">Curious to delve deeper into what we have to offer? Take the next step and unlock access to a diverse range of features and possibilities that await you within our platform. </div>
+                <div>
+                    <a class="link" href="/">Request Access</a>
+                </div>
+            </div>
+            <!-- Request Access Section starts-->
+        </div>
+        <!-- Banner Ends -->
+    </div>
+    <!-- content ends -->
+    <!-- Footer Section Starts -->
+    <div class="footer">
+        <div class="about-us-container">
+            <div class="title body-text dull-text bold-text">About Us</div>
+
+            <div class="descriptor">
+                We are a neo-bank, building the economic infrastructure for the Indian workforce. The idea was conceived when a young girl asked Vibhore, a serial entrepreneur, why the money in her piggy bank never grew. Adopting this philosophy of #DemandMore, we connect enterprises, banks, and HR Tech platforms to enhance value for all stakeholders. Core team members have proven their vision and executive skills in CoCubes, a complete assessment solution for students and institutes, acquired by Aon. Now they are building the squad to revolutionize banking.
+            </div>
+        </div>
+
+        <div class="useful-links bold-text" bold-text">
+            <div class="title body-text dull-text">Useful Links</div>
+
+            <div class="links">
+                <a class="link" href="/">Trust</a>
+                <span>|</span>
+                <span class="full-text"><a class="link" href="/">Terms &amp; Conditions</a></span>
+                <span class="short-text"><a class="link" href="/">T&amp;C</a></span>
+                <span>|</span>
+                <a class="link" href="/">Privacy Policy</a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 OneBanc Technologies Pvt. Ltd.
+        </div>
+    </div>
+    <!-- Footer Section Starts -->
+    <script src="script.js"></script>
+</body>
+</html>
+
