@@ -23,6 +23,6 @@ Technical Details
 #### Note
 This project is a UI clone only, and does not include functional cloning of the original website. The focus is on providing a user-friendly interface for API management and customization.
 
-`Cloned Website` - <https://dis-ease-20.github.io/OneBanc-Website-Clone/home.html>
+`Cloned Website` - <https://dis-ease-20.github.io/OneBanc-Website-Clone/home>
 
 `Original Website` - <https://dev.onebanc.ai>
