@@ -28,11 +28,10 @@
                         <div class="user-name"></div>
                         <a href="/" class="primary-button">Logout</a>
                     </div>
-                </div>  
+                </div>
             </div>
         </div>
         <!-- header ends -->
-
         <!-- welcome-section start -->
         <div class="welcome-section">
             <img class="background-image" src="images/dev_landing_landscape.png" alt="welcome background image" />
@@ -41,14 +40,14 @@
             <div class="title-box">
                 <div class="title-container body-box">
                     <div class="page-title white-text">Welcome to</div>
-                    <div class="page-title highlight-text light">Dev<span class="txt">eloper</span> Portal</div>
+                    <div class="page-title highlight-text light">Dev<span class="txt">eloper</span> <span>Portal</span></div>
                 </div>
                 <div class="title-descriptor white-text">Your one stop gateway to a world of financial innovation. Explore powerful APIs and tools designed to streamline and enhance your development journey in the dynamic realm of banking technology.</div>
             </div>
         </div>
         <!-- welcome-section start -->
     </div>
-    
+
     <!-- content starts -->
     <div class="content">
         <div class="content-section">
@@ -63,9 +62,10 @@
             </div>
 
             <div class="diverse-profile">
-                <div class="diverse-left-section">
-                    <div id="banking-institution" class="left-section-box active">
-                        
+
+                <div id="diverse-left-section" class="diverse-left-section">
+                    <div id="left-bankingservices" class="left-section-box active" onclick="toggleActive(this)">
+
                         <table class="title-box">
                             <tbody>
                                 <tr>
@@ -79,7 +79,7 @@
                         <a class="link log-out">Unlock Now</a>
                         <a class="link log-in hide">View More</a>
                     </div>
-                    <div id="cooprate-partners" class="left-section-box">
+                    <div id="left-corporateservices" class="left-section-box" onclick="toggleActive(this)">
                         <table class="title-box">
                             <tbody>
                                 <tr>
@@ -92,7 +92,7 @@
                         <a class="link log-out">Unlock Now</a>
                         <a class="link log-in hide">View More</a>
                     </div>
-                    <div id="payroll-management" class="left-section-box">
+                    <div id="left-hrmsservices" class="left-section-box" onclick="toggleActive(this)">
                         <table class="title-box">
                             <tbody>
                                 <tr>
@@ -105,7 +105,7 @@
                         <a class="link log-out">Unlock Now</a>
                         <a class="link log-in hide">View More</a>
                     </div>
-                    <div id="merchant-partners" class="left-section-box">
+                    <div id="left-merchantservices" class="left-section-box" onclick="toggleActive(this)">
                         <table class="title-box">
                             <tbody>
                                 <tr>
@@ -121,12 +121,9 @@
                 </div>
 
                 <div class="diverse-right-section">
+
                     <div id="bankingservices" class="profile">
-                        <ul class="profile-level-1">
-                            <li>
-                                <div class="section-title diverse-title">Banking Services</div>
-                            </li>
-                        </ul>
+                        <div class="section-title">Banking Services</div>
                         <ul class="api-list-container">
                             <li>
                                 <div class="api-list-title dull-white-text">Module</div>
@@ -164,15 +161,11 @@
                     </div>
 
                     <div id="corporateservices" class="profile hide">
-                        <ul class="profile-level-1">
-                            <li>
-                                <div class="section-title diverse-title">Corporate Services</div>
-                            </li>
-                        </ul>
-                        <ul class="api-list-container profile-level-2">
+                        <div class="section-title">Corporate Services</div>
+                        <ul class="api-list-container">
                             <li>
                                 <div class="api-list-title dull-white-text">Module</div>
-                                <ul class="api-list profile-level-2-list">
+                                <ul class="api-list">
                                     <li class="list-items">Activate Card</li>
                                     <li class="list-items">Check Card Status</li>
                                     <li class="list-items">Delete Card Token</li>
@@ -183,10 +176,10 @@
                                 </ul>
                             </li>
                         </ul>
-                        <ul class="api-list-container profile-level-3">
+                        <ul class="api-list-container">
                             <li>
                                 <div class="api-list-title dull-white-text">Control</div>
-                                <ul class="api-list diverse-profiles-level-3-list">
+                                <ul class="api-list">
                                     <li class="list-items">Account Balance</li>
                                     <li class="list-items">Check Account Status</li>
                                     <li class="list-items">Set Account Status</li>
@@ -206,25 +199,21 @@
                     </div>
 
                     <div id="hrmsservices" class="profile hide">
-                        <ul class="profile-level-1">
-                            <li>
-                                <div class="section-title diverse-title">HRMS Services</div>
-                            </li>
-                        </ul>
-                        <ul class="api-list-container profile-level-2">
+                        <div class="section-title">HRMS Services</div>
+                        <ul class="api-list-container">
                             <li>
                                 <div class="api-list-title dull-white-text">Module</div>
-                                <ul class="api-list profile-level-2-list">
+                                <ul class="api-list">
                                     <li class="list-items">HRIS</li>
                                     <li class="list-items">Payroll</li>
                                     <li class="list-items">Travel and Entertainment</li>
                                 </ul>
                             </li>
                         </ul>
-                        <ul class="api-list-container profile-level-3">
+                        <ul class="api-list-container">
                             <li>
                                 <div class="api-list-title dull-white-text">Control</div>
-                                <ul class="api-list profile-level-3-list">
+                                <ul class="api-list">
                                     <li class="list-items">Get CTC Details</li>
                                     <li class="list-items">Get Employee Details</li>
                                     <li class="list-items">Get Employment Status</li>
@@ -246,17 +235,13 @@
                             </li>
                         </ul>
                     </div>
-                
+
                     <div id="merchantservices" class="profile hide">
-                        <ul class="profile-level-1">
-                            <li>
-                                <div class="section-title diverse-title">Merchant Services</div>
-                            </li>
-                        </ul>
-                        <ul class="api-list-container profile-level-2">
+                        <div class="section-title">Merchant Services</div>
+                        <ul class="api-list-container">
                             <li>
                                 <div class="api-list-title dull-white-text">Module</div>
-                                <ul class="api-list profile-level-2-list">
+                                <ul class="api-list">
                                     <li class="list-items">Issue Add on Card</li>
                                     <li class="list-items">Manage Card Lock</li>
                                     <li class="list-items">Pause Card Token</li>
@@ -267,10 +252,10 @@
                                 </ul>
                             </li>
                         </ul>
-                        <ul class="api-list-container profile-level-3">
+                        <ul class="api-list-container">
                             <li>
                                 <div class="api-list-title dull-white-text">Control</div>
-                                <ul class="api-list diverse-profiles-level-3-list">
+                                <ul class="api-list">
                                     <li class="list-items">Account Balance</li>
                                     <li class="list-items">Check Account Status</li>
                                     <li class="list-items">Set Account Status</li>
@@ -295,31 +280,31 @@
 
         <!-- Banner Starts-->
         <div class="banner">
-            
-                <div class="banner-content">
-                    
-                        <div class="content-title">We've got you covered with</div>
-                        <div class="covered-module">
 
-                            <div class="left-box">
-                                <div class="title-box">
-                                    <div class="image"><img src="images\dev_efficient.svg" alt="img" /></div>
-                                    <div class="section-title dark-text bold-text">Efficient and Robust<span class="highlight-text"> APIs</span></div>
-                                </div>
-                                <div class="descriptor">Dive into a world where efficiency meets innovation, as our APIs redefine the standards for speed, reliability, and responsiveness, providing a foundation for agile and high-performance applications. </div>
-                            </div>
+            <div class="banner-content">
 
-                            <div class="right-box">
-                                <div class="title-box">
-                                    <div class="image"><img src="images\dev_safe.svg" alt="img" /></div>
-                                    <div class="section-title dark-text bold-text">Safe and Secure <span class="highlight-text"> APIs</span></div>
-                                </div>
-                                <div class="descriptor">Our cutting-edge APIs are meticulously crafted to deliver unparalleled performance and redefine the standards for speed, reliability, and responsiveness by ensuring swift and seamless interactions for developers and businesses. </div>
-                            </div>
+                <div class="content-title">We've got you covered with</div>
+                <div class="covered-module">
 
+                    <div class="left-box">
+                        <div class="title-box">
+                            <div class="image"><img src="images\dev_efficient.svg" alt="img" /></div>
+                            <div class="section-title dark-text bold-text">Efficient and Robust<span class="highlight-text"> APIs</span></div>
                         </div>
+                        <div class="descriptor">Dive into a world where efficiency meets innovation, as our APIs redefine the standards for speed, reliability, and responsiveness, providing a foundation for agile and high-performance applications. </div>
+                    </div>
+
+                    <div class="right-box">
+                        <div class="title-box">
+                            <div class="image"><img src="images\dev_safe.svg" alt="img" /></div>
+                            <div class="section-title dark-text bold-text">Safe and Secure <span class="highlight-text"> APIs</span></div>
+                        </div>
+                        <div class="descriptor">Our cutting-edge APIs are meticulously crafted to deliver unparalleled performance and redefine the standards for speed, reliability, and responsiveness by ensuring swift and seamless interactions for developers and businesses. </div>
+                    </div>
+
                 </div>
-            
+            </div>
+
             <!-- Request Access Section starts-->
             <div class="request-access-section">
                 <div class="section-title bold-text dark-text">Want Access Explore? </div>
@@ -333,6 +318,7 @@
         <!-- Banner Ends -->
     </div>
     <!-- content ends -->
+    <!-- Footer Section Starts -->
     <div class="footer">
         <div class="about-us-container">
             <div class="title body-text dull-text bold-text">About Us</div>
@@ -358,5 +344,8 @@
             &copy; 2023 OneBanc Technologies Pvt. Ltd.
         </div>
     </div>
+    <!-- Footer Section Starts -->
+    <script src="script.js"></script>
 </body>
 </html>
+
